@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [[ $(xrandr -q | grep "HDMI-A-0 connected") ]];then
+  xrandr --output HDMI-A-0 --primary --output eDP --right-of HDMI-A-0
+  bspc monitor HDMI-A-0 -d 1 2 3
+  bspc monitor eDP -d 4 5
+else
+  bspc monitor eDP -d 1 2 3 4 5
+fi

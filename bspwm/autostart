@@ -1,0 +1,8 @@
+#!/bin/sh
+
+setxkbmap se &
+xsetroot -cursor_name left_ptr
+
+picom &
+dunst &
+feh &
