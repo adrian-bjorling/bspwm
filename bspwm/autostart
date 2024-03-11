@@ -3,6 +3,6 @@
 setxkbmap se &
 xsetroot -cursor_name left_ptr
 
-picom &
+picom -b --config ~/.config/picom/picom.conf &
 dunst &
-feh &
+feh --no-fehbg --bg-fill ~/pic/wallpaper/howls-moving-castle.jpg &
